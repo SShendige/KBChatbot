@@ -1,0 +1,79 @@
+.document-card {
+    background: white;
+    border: 2px solid #f0f0f0;
+    border-radius: 12px;
+    padding: 1.25rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.document-card:hover {
+    border-color: #00B7B5;
+    box-shadow: 0 4px 12px rgba(0, 183, 181, 0.1);
+    transform: translateY(-2px);
+}
+
+.document-card-selected {
+    border-color: #00B7B5;
+    background: linear-gradient(135deg, rgba(0, 183, 181, 0.05) 0%, rgba(1, 135, 144, 0.05) 100%);
+}
+
+.document-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.document-card-body {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.document-icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.document-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.document-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 0.5rem 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.document-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.document-meta-item {
+    font-size: 0.8125rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.document-date {
+    font-size: 0.75rem;
+    color: #999;
+}
+
+.document-card-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0.75rem;
+    border-top: 1px solid #f0f0f0;
+}

@@ -1,0 +1,56 @@
+.file-upload-zone {
+    border: 2px dashed #d0d0d0;
+    border-radius: 12px;
+    padding: 3rem 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, rgba(0, 183, 181, 0.02) 0%, rgba(1, 135, 144, 0.02) 100%);
+}
+
+.file-upload-zone:hover {
+    border-color: #00B7B5;
+    background: linear-gradient(135deg, rgba(0, 183, 181, 0.05) 0%, rgba(1, 135, 144, 0.05) 100%);
+    transform: translateY(-2px);
+}
+
+.file-upload-zone-active {
+    border-color: #00B7B5;
+    background: linear-gradient(135deg, rgba(0, 183, 181, 0.1) 0%, rgba(1, 135, 144, 0.1) 100%);
+    transform: scale(1.02);
+}
+
+.file-upload-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.file-upload-text {
+    font-size: 1.125rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.file-upload-link {
+    color: #00B7B5;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.file-upload-hint {
+    font-size: 0.875rem;
+    color: #999;
+}

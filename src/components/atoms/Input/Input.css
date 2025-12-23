@@ -1,0 +1,86 @@
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.input-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4a5568;
+    margin-left: 2px;
+}
+
+.input-required {
+    color: #e53e3e;
+    margin-left: 2px;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: all 0.2s;
+    background-color: white;
+    color: #2d3748;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #00B7B5;
+    box-shadow: 0 0 0 3px rgba(0, 183, 181, 0.1);
+}
+
+.input-error {
+    border-color: #fc8181;
+}
+
+.input-error:focus {
+    border-color: #fc8181;
+    box-shadow: 0 0 0 3px rgba(252, 129, 129, 0.1);
+}
+
+.input-error-message {
+    font-size: 0.75rem;
+    color: #e53e3e;
+    margin-left: 2px;
+}
+
+/* Password Toggle Styling */
+.input-password {
+    padding-right: 3rem;
+    /* Make room for the button */
+}
+
+.password-toggle {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #a0aec0;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+}
+
+.password-toggle:hover {
+    color: #4a5568;
+}
+
+.password-toggle:focus {
+    outline: none;
+    color: #00B7B5;
+}
